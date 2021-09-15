@@ -1,4 +1,4 @@
-var strWord = "tree";
+var strWord = "Excellence";
 
 
 function getWord(word) {
