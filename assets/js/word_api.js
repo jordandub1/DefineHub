@@ -6,7 +6,7 @@ function getWord(word) {
         alert("please enter a valid word");
         return;
     }
-    fetch("https://wordsapiv1.p.rapidapi.com/words/" + strWord + "/definitions", {
+    fetch("https://wordsapiv1.p.rapidapi.com/words/" + strWord +"/definitions", {
         "headers": {
             "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
             "x-rapidapi-key": "a4ba826bffmshdef196afc9f018cp1d1ebajsn6a07f04a0a7c"

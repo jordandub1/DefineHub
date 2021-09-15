@@ -1,8 +1,8 @@
-
 var inputEl = document.querySelector("#city");
 var btnEl = document.querySelector("#btn");
 
 var origin = "United Kingdom";
+
 
 window.onload = function () {
   L.mapquest.key = "MxMEt0lAXnEnzLPH7q3pPeMkwmaa422h";
