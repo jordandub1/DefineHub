@@ -1,4 +1,4 @@
-var origin = "Cary, NC";
+var origin = "brazil";
 
 window.onload = function () {
   L.mapquest.key = "MxMEt0lAXnEnzLPH7q3pPeMkwmaa422h";
@@ -11,7 +11,7 @@ window.onload = function () {
     var map = L.mapquest.map("map", {
       center: latLng,
       layers: L.mapquest.tileLayer("map"),
-      zoom: 14,
+      zoom: 5,
     });
 
     var customIcon = L.mapquest.icons.circle({
