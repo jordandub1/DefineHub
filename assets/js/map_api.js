@@ -1,3 +1,4 @@
+
 var inputEl = document.querySelector("#city");
 var btnEl = document.querySelector("#btn");
 
