@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    --orange: #E3863C;
+    --darkblue: #092232;
+}
+
+.hero {
+    background: url(../images/hero-image.jpg);
+    background-size: cover;
+    background-position: 0 40%;
+    background-repeat: no-repeat;
+    height: 464px;
+    position: relative;
+}
+
+.btn-primary {
+    background-color: var(--orange);
+    color: #092232;
+    border-color: transparent;
+    width: 10%;
+}
+
+.btn-primary:hover {
+    background-color: var(--darkblue);
+    color: white;
+    border-color: transparent;
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
+#explain-definehub {
+    margin-left: 5%;
+}
+
+.card {
+    background-color: transparent;
+    color: white;
+    border: transparent;
+}
+
+.justify-content-md-end {
+    padding-right: 15%;
+}
+
+#start-here-btn {
+    width: 50%;
+    background-color: var(--darkblue);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#start-here-btn:hover {
+    transform: rotate(360deg);
+}
+
+.row {
+    align-items: center;
+}
