@@ -29,16 +29,31 @@ nav a {
 }
 
 main {
-    margin: 3%;
+    width: 100%;
     /* border: 1px solid red; */
 }
 
 .word-search {
     /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 2%;
 }
 
-.word-search div {
-    /* border: 1px solid red; */
+.main-bottom {
+    display: flex;
+    margin: 2%;
+}
+
+.map {
+    width: 50%;
+    margin: 2%;
+}
+
+.youtube {
+    width: 50%;
+    margin: 2%;
+
 }
 
 
@@ -180,4 +195,19 @@ input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input
   100% {
     opacity: 1;
   }
+}
+
+footer {
+    position : absolute;
+    width: 100%;
+    bottom : 0;
+    height : 55px;
+    margin-top : 40px;
+    background-color: #092232;
+    color: #E3863C;
+    text-align: center;
+}
+
+footer span {
+    font-size: 90%;
 }
