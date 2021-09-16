@@ -1,7 +1,19 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
 body {
     display: flex;
     flex-direction: column;
     line-height: 1.3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+  margin-right: 0;
 }
 
 header {
@@ -13,6 +25,7 @@ header {
 
 header img {
     height: 50px;
+    margin-left: 50px;
 }
 
 nav ul {
@@ -30,7 +43,7 @@ nav a {
 
 main {
     width: 100%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .word-search {
@@ -40,20 +53,16 @@ main {
     margin: 2%;
 }
 
-.main-bottom {
-    display: flex;
-    margin: 2%;
-}
-
-.map {
-    width: 50%;
-    margin: 2%;
+.word-class {
+  width: 50%;
+  margin: 2%;
+  border: 1px solid blue;
 }
 
 .youtube {
     width: 50%;
     margin: 2%;
-
+    border: 1px solid green;
 }
 
 
@@ -198,7 +207,7 @@ input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input
 }
 
 footer {
-    position : absolute;
+    /* position : absolute; */
     width: 100%;
     bottom : 0;
     height : 55px;
