@@ -59,4 +59,35 @@
 
 .row {
     align-items: center;
+    --bs-gutter-x: 6rem;
+}
+
+.body-card {
+    margin: 30px;
+}
+
+#pronounce-image, #define-image{
+    transform: rotate(-5deg);
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px #070D0D;
+    margin-left: 50px;
+}
+
+#translate-image {
+    transform: rotate(5deg);
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px #070D0D;
+    margin-left: 50px;
+}
+
+#main-content {
+    color: var(--darkblue);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 1600px;
+}
+
+footer {
+    height: 65px;
+    background-color: var(--darkblue);
 }
