@@ -1,3 +1,4 @@
+/* Root Styling */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   --darkblue: #092232;
 }
 
+/* Hero image */
 .hero {
   background: url(../images/hero-image.jpg);
   background-size: cover;
@@ -14,6 +16,7 @@
   position: relative;
 }
 
+/* Nav buttons */
 .btn-primary {
   background-color: var(--orange);
   color: #092232;
@@ -31,6 +34,7 @@
   background-color: transparent !important;
 }
 
+/* DefineHub Hero Text */
 #explain-definehub {
   margin-left: 5%;
   text-shadow: 2px 2px 2px black;
@@ -45,6 +49,7 @@
   color: white;
 }
 
+/* Start Here Button */
 #start-here-btn {
   width: 50%;
   background-color: var(--darkblue);
@@ -68,6 +73,7 @@
   text-decoration: none;
 }
 
+/* Main content styling */
 .card {
   background-color: transparent;
   color: white;
@@ -92,6 +98,7 @@ p {
   color: var(--darkblue);
 }
 
+/* Image Styling */
 #pronounce-image,
 #define-image {
   transform: rotate(-5deg);
@@ -113,7 +120,8 @@ p {
   max-width: 1600px;
 }
 
+/* Footer Styling */
 footer {
-  height: 65px;
+  height: 55px;
   background-color: var(--darkblue);
 }
