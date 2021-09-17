@@ -46,7 +46,7 @@
 }
 
 #start-here-btn {
-    width: 50%;
+    width: 200px;
     background-color: var(--darkblue);
     color: white;
     font-weight: bold;
