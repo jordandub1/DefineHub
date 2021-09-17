@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -22,11 +26,39 @@ nav a {
   text-decoration: none;
 }
 
-.center {
-  background-size: contain;
+.bg-img {
+  background-image: url("warmer.jpg");
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  width: 100%;
-  height: 300px;
-  
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  max-width: 300px;
+  padding: 20px;
+}
+
+input[type=search]:focus, input[type=search]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  width: 40%;
+  border: none;
+  background-color: #E3863C;
+  padding: 14px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.footer {
+  background-color:#092232;
+  position: fixed;
 }
 
