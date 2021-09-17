@@ -35,6 +35,15 @@
     margin-left: 5%;
 }
 
+#explain-definehub p {
+    font-size: 22px;
+    width: 650px;
+}
+
+#welcome-text {
+    color: white;
+}
+
 #start-here-btn a{
     color: white;
     text-decoration: none;
@@ -76,6 +85,10 @@
     margin: 30px;
 }
 
+.body-card h1,p {
+    color: var(--darkblue);
+}
+
 #pronounce-image, #define-image{
     transform: rotate(-5deg);
     border-radius: 10px;
@@ -91,11 +104,11 @@
 }
 
 #main-content {
-    color: var(--darkblue);
     margin-top: 40px;
     margin-bottom: 40px;
     max-width: 1600px;
 }
+
 
 footer {
     height: 65px;
