@@ -37,21 +37,27 @@ nav a {
 
 .container {
   position: absolute;
-  margin: 20px;
-  max-width: 300px;
-  padding: 20px;
+  margin: 5px;
+  max-width: 600px;
+  padding: 100px;
+  text-align: center;
+  font-size: 25px;
 }
 
-input[type=search]:focus, input[type=search]:focus {
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
   background-color: #ddd;
-  outline: none;
+  text-align: center;
 }
 
 .btn {
-  width: 40%;
+  width: 50%;
   border: none;
   background-color: #E3863C;
-  padding: 14px 18px;
+  padding: 16px 100px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
