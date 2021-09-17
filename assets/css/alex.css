@@ -208,6 +208,7 @@ input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input
 
 footer {
     /* position : absolute; */
+    position: fixed;
     width: 100%;
     bottom : 0;
     height : 55px;
