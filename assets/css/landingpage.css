@@ -1,116 +1,119 @@
-*{
-    margin:0;
-    padding:0;
-    --orange: #E3863C;
-    --darkblue: #092232;
+* {
+  margin: 0;
+  padding: 0;
+  --orange: #e3863c;
+  --darkblue: #092232;
 }
 
 .hero {
-    background: url(../images/hero-image.jpg);
-    background-size: cover;
-    background-position: 0 40%;
-    background-repeat: no-repeat;
-    height: 464px;
-    position: relative;
+  background: url(../images/hero-image.jpg);
+  background-size: cover;
+  background-position: 0 40%;
+  background-repeat: no-repeat;
+  height: 464px;
+  position: relative;
 }
 
 .btn-primary {
-    background-color: var(--orange);
-    color: #092232;
-    border-color: transparent;
-    width: 10%;
+  background-color: var(--orange);
+  color: #092232;
+  border-color: transparent;
+  width: 10%;
 }
 
 .btn-primary:hover {
-    background-color: var(--darkblue);
-    color: white;
-    border-color: transparent;
+  background-color: var(--darkblue);
+  color: white;
+  border-color: transparent;
 }
 
 .bg-light {
-    background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 #explain-definehub {
-    margin-left: 5%;
+  margin-left: 5%;
+  text-shadow: 2px 2px 2px black;
 }
 
 #explain-definehub p {
-    font-size: 22px;
-    width: 650px;
+  font-size: 22px;
+  width: 650px;
 }
 
 #welcome-text {
-    color: white;
-}
-
-#start-here-btn a{
-    color: white;
-    text-decoration: none;
-}
-
-#start-here-btn a:visited{
-    color: none;
-    text-decoration: none;
-}
-
-.card {
-    background-color: transparent;
-    color: white;
-    border: transparent;
-}
-
-.justify-content-md-end {
-    padding-right: 15%;
+  color: white;
 }
 
 #start-here-btn {
-    width: 50%;
-    background-color: var(--darkblue);
-    color: white;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out 0s;
+  width: 50%;
+  background-color: var(--darkblue);
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 #start-here-btn:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#start-here-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+#start-here-btn a:visited {
+  color: none;
+  text-decoration: none;
+}
+
+.card {
+  background-color: transparent;
+  color: white;
+  border: transparent;
+}
+
+.justify-content-md-end {
+  padding-right: 15%;
 }
 
 .row {
-    align-items: center;
-    --bs-gutter-x: 6rem;
+  align-items: center;
+  --bs-gutter-x: 6rem;
 }
 
 .body-card {
-    margin: 30px;
+  margin: 30px;
 }
 
-.body-card h1,p {
-    color: var(--darkblue);
+.body-card h1,
+p {
+  color: var(--darkblue);
 }
 
-#pronounce-image, #define-image{
-    transform: rotate(-5deg);
-    border-radius: 10px;
-    box-shadow: 3px 5px 10px #070D0D;
-    margin-left: 50px;
+#pronounce-image,
+#define-image {
+  transform: rotate(-5deg);
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px #070d0d;
+  margin-left: 50px;
 }
 
 #translate-image {
-    transform: rotate(5deg);
-    border-radius: 10px;
-    box-shadow: 3px 5px 10px #070D0D;
-    margin-left: 50px;
+  transform: rotate(5deg);
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px #070d0d;
+  margin-left: 100px;
 }
 
 #main-content {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    max-width: 1600px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 1600px;
 }
 
-
 footer {
-    height: 65px;
-    background-color: var(--darkblue);
+  height: 65px;
+  background-color: var(--darkblue);
 }
