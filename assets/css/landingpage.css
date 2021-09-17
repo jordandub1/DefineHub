@@ -35,6 +35,16 @@
     margin-left: 5%;
 }
 
+#start-here-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+#start-here-btn a:visited{
+    color: none;
+    text-decoration: none;
+}
+
 .card {
     background-color: transparent;
     color: white;
