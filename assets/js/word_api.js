@@ -1,4 +1,4 @@
-var strWord = "Excellence";
+var strWord = $("#nme");
 
 
 function getWord(word) {
@@ -6,7 +6,7 @@ function getWord(word) {
         alert("please enter a valid word");
         return;
     }
-    fetch("https://wordsapiv1.p.rapidapi.com/words/" + strWord +"/definitions", {
+    fetch("https://wordsapiv1.p.rapidapi.com/words/" + word +"/definitions", {
         "headers": {
             "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
             "x-rapidapi-key": "a4ba826bffmshdef196afc9f018cp1d1ebajsn6a07f04a0a7c"
@@ -19,13 +19,19 @@ function getWord(word) {
         .then(data => {
             console.log(data);
             $("h1").text(word);
-            $("h1").append($("<p>").text(data.definitions[0].definition));
+            for (i = 0; i < data.definitions.length; i++) {
+                $("#word-ul").append($("<li>").text(data.definitions[i].definition));
+            };
 
         })
         .catch(err => {
             console.error(err);
-            alert(err);
+            // alert(err);
         })
 };
 
-getWord(strWord);
+$("#btn-search").on("click", function (e) {
+    e.preventDefault();
+    console.log(strWord[0].value);
+    getWord(strWord[0].value);
+});
