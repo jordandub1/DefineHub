@@ -5,9 +5,11 @@ var targetLanguage = document.getElementById("dropdown");
 
 //On Dropdown change word will be translated to the choosen language
 targetLanguage.addEventListener("change", function (event) {
+  event.preventDefault();
   console.log(event.target.value);
   var targetLanguage1 =
     targetLanguage.options[targetLanguage.selectedIndex].value;
+
   fetch(
     "https://libretranslate.de/translate?q=" +
       wordToTranslate +

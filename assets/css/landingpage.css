@@ -105,6 +105,10 @@ p {
   color: var(--darkblue);
 }
 
+.body-card p{
+  font-size: 20px;
+}
+
 /* Image Styling */
 #pronounce-image,
 #define-image {

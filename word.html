@@ -78,16 +78,86 @@
   frameborder="0"></iframe>
       <div id="youtube-list-holder">
         <ul id="youtube-list">
-          
         </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="word-search">
+        <form>
+          <input
+            type="text"
+            name="name"
+            class="question"
+            id="nme"
+            required
+            autocomplete="off"
+          />
+          <label for="nme"><span id="word">🔎︎ Search</span></label>
+          <button id="btn-search">Search</button>
+        </form>
+      </section>
+
+      <div class="row">
+        <section id="word-info" class="word-class col">
+          <div>
+            <h1></h1>
+            <ul id="word-ul"></ul>
+          </div>
+          <div>
+            <h2>Translate your Word</h2>
+            <select id="dropdown" name="dropdown">
+              <option value="en" selected="">English</option>
+              <option value="ar">Arabic</option>
+              <option value="zh">Chinese</option>
+              <option value="fr">French</option>
+              <option value="de">German</option>
+              <option value="hi">Hindi</option>
+              <option value="id">Indonesian</option>
+              <option value="ga">Irish</option>
+              <option value="it">Italian</option>
+              <option value="ja">Japanese</option>
+              <option value="ko">Korean</option>
+              <option value="pl">Polish</option>
+              <option value="pt">Portuguese</option>
+              <option value="ru">Russian</option>
+              <option value="es">Spanish</option>
+              <option value="tr">Turkish</option>
+              <option value="vi">Vietnamese</option>
+              <!---->
+            </select>
+            <h3 id="dropdownSelected"></h3>
+          </div>
+        </section>
+
+        <section id="youtube-input" class="youtube col">
+          <iframe
+            id="player"
+            type="text/html"
+            width="120"
+            height="90"
+            src=""
+            frameborder="0"
+          ></iframe>
+          <div id="youtube-list-holder">
+            <ul id="youtube-list"></ul>
+          </div>
+        </section>
       </div>
-      
-    </section>
-  </div>
+    </main>
 
-  </main>
-
-
+    <footer>
+      <span>Made with Love ❤️</span>
+    </footer>
+  </body>
+  <script>
+    gapi.load("client");
+  </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/translate@1/translate.min.js"></script>
 
   <footer>
     <span>Made with Love ❤️</span>
@@ -102,17 +172,9 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/translate@1/translate.min.js"></script>
 <script src="./assets/js/word_api.js"></script>
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
-    integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script src="./assets/js/translate-libre.js"></script>
-
 <script src="./assets/js/youtube_api.js"></script>
 
-<!-- <script src="./assets/js/map_api.js"></script> -->
+<script src="./assets/js/map_api.js"></script>
 
 
 </html>
