@@ -25,7 +25,13 @@
   width: 10%;
 }
 
-.btn-primary:hover {
+.btn-primary a{
+  text-decoration: none;
+  color: var(--darkblue);
+}
+
+.btn-primary:hover,
+.btn-primary a:hover {
   background-color: var(--darkblue);
   color: white;
   border-color: transparent;
