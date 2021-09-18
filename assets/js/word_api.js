@@ -1,5 +1,7 @@
 var strWord = $("#nme");
+var searchWord = $("#word");
 
+console.log(searchWord[0].value);
 
 function getWord(word) {
     if (!word) {
