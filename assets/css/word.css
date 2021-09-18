@@ -14,6 +14,7 @@ body {
 
 .row {
   margin-right: 0;
+  margin-bottom: 55px;
 }
 
 header {
@@ -33,6 +34,7 @@ nav ul {
     justify-content: space-between;
     padding-right: 20px;
     min-width: 300px;
+    list-style-type: none;
 }
 
 nav a {
