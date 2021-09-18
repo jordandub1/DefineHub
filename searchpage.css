@@ -10,7 +10,8 @@ header {
 }
 
 header img {
-  height: 50px;
+  width: 298px;
+  height: 100px;
 }
 
 nav ul {
@@ -42,6 +43,7 @@ nav a {
   padding: 100px;
   text-align: center;
   font-size: 25px;
+  font-family: 'libre franklin', sans-serif;
 }
 
 input[type=text] {
