@@ -4,30 +4,162 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
     <link
-      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/landingpage.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/book-icon.png"
+    />
+    <title>DefineHub</title>
   </head>
   <body>
-    <h1>Test</h1>
-    <div class="locationEl">
-      <h3>Search by City</h3>
-      <input type="text" class="city-input" id="city" />
-      <button class="btn" type="submit">Search</button>
-      <div id="map" style="width: 100%; height: 530px"></div>
+    <!--hero image background w nav-->
+    <div class="hero">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <button type="button" class="btn btn-primary" id="nav1">
+            <a href='https://github.com/jordandub1/DefineHub' target="_blank">GitHub</a>
+          </button>
+          <button type="button" class="btn btn-primary" id="nav2">
+            <a href='https://developers.google.com/youtube/v3' target="_blank">YouTube API</a>
+          </button>
+          <!--Centered Logo-->
+          <div style="text-align: center">
+            <img
+              src="assets/images/bright-logo-shadow.png"
+              id="logo"
+              alt="DefineHub Logo"
+              width="298"
+              height="100"
+            />
+          </div>
+          <button type="button" class="btn btn-primary" id="nav3">
+            <a href="https://www.wordsapi.com/docs/" target="_blank">Words API </a>
+          </button>
+          <button type="button" class="btn btn-primary" id="nav4">
+            <a href='https://libretranslate.de/' target="_blank">Translate API</a>
+          </button>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <!--DefineHub Text-->
+          <div class="col">
+            <!-- text body on hero image -->
+            <div class="card" id="explain-definehub">
+              <div class="card-body">
+                <h1>Welcome to DefineHub!</h1>
+                <p id="welcome-text">
+                  DefineHub is an all-in-one location for your word search that
+                  puts the definition, translation, and pronunciation of any
+                  word from the dictionary right at your fingertips! Just click
+                  the Start Here button to begin the journey of adding to your
+                  vocabulary!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--start here button-->
+          <div class="col">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button type="button" class="btn btn-primary" id="start-here-btn">
+                <a href="searchpage.html">Start Here!</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--main content-->
+    <div class="container" id="main-content">
+      <!-- define section -->
+      <div class="row">
+        <!--Define image-->
+        <div class="col body-card">
+          <img
+            src="assets/images/define.jpeg"
+            id="define-image"
+            alt="Page in Dictionary"
+            width="458"
+            height="266"
+          />
+        </div>
+        <div class="col body-card">
+          <!--Define text-->
+          <h1>Define</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus,
+            esse adipisci? Quos, nemo obcaecati! Deleniti qui dolorem ex.
+            Repellat quos rerum adipisci aliquam nulla iste aliquid est quia
+            fugiat autem.
+          </p>
+        </div>
+      </div>
+      <!-- Translate section -->
+      <div class="row">
+        <div class="col body-card">
+          <!--Translate text-->
+          <h1>Translate</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus,
+            esse adipisci? Quos, nemo obcaecati! Deleniti qui dolorem ex.
+            Repellat quos rerum adipisci aliquam nulla iste aliquid est quia
+            fugiat autem.
+          </p>
+        </div>
+        <div class="col body-card">
+          <!-- Translate image -->
+          <img
+            src="assets/images/translate.jpeg"
+            id="translate-image"
+            alt="World Map"
+            width="458"
+            height="266"
+          />
+        </div>
+      </div>
+      <!-- Pronounce section -->
+      <div class="row">
+        <div class="col body-card">
+          <!-- Pronounce image -->
+          <img
+            src="assets/images/justicer.jpeg"
+            id="pronounce-image"
+            alt="Justicer in dictionary"
+            width="458"
+            height="266"
+          />
+        </div>
+        <div class="col body-card">
+          <!-- Pronounce text -->
+          <h1>Pronounce</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus,
+            esse adipisci? Quos, nemo obcaecati! Deleniti qui dolorem ex.
+            Repellat quos rerum adipisci aliquam nulla iste aliquid est quia
+            fugiat autem.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/translate@1/translate.min.js"></script>
-
-  <script src="./assets/js/word_api.js"></script>
-  <script src="./assets/js/map_api.js"></script>
+  <!-- Dark blue footer -->
+  <footer></footer>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>
