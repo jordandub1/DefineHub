@@ -52,7 +52,20 @@ main {
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
-    margin: 2%;
+    margin: 4%;
+}
+
+#btn-search {
+  background-color: var(--orange);
+  color: #092232;
+  border-color: transparent;
+  margin: 10px 0 0 60px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+#btn-search:hover {
+  cursor: pointer;
 }
 
 .word-class {
