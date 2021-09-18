@@ -44,24 +44,24 @@ init();
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 // var player;
-function onYouTubeIframeAPIReady(vidid) {
-  console.log('YTiFrameAPIReady');
-  console.log(vidid);
-  player = new YT.Player('player', {
-    height: '390',
-    width: '640',
-    videoId: '5nBbD1yj20s',
-    // videoId: videoid,
-    playerVars: {
-      'playsinline': 1
-    },
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-  // player.loadVideoById(vidid,0)
-}
+// function onYouTubeIframeAPIReady(vidid) {
+//   console.log('YTiFrameAPIReady');
+//   console.log(vidid);
+//   player = new YT.Player('player', {
+//     height: '390',
+//     width: '640',
+//     videoId: '5nBbD1yj20s',
+//     // videoId: videoid,
+//     playerVars: {
+//       'playsinline': 1
+//     },
+//     events: {
+//       'onReady': onPlayerReady,
+//       'onStateChange': onPlayerStateChange
+//     }
+//   });
+//   // player.loadVideoById(vidid,0)
+// }
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
@@ -92,7 +92,7 @@ $("#btn-search").on("click", async function () {
 $("#youtube-list").on("click", "li", function (event) {
   var vid = $(event.target);
   console.log(vid.data("vidid"));
-  $("#player").attr("src","http://www.youtube.com/embed/" + vid.data("vidid") + "?enablejsapi=1")
+  $("#player").attr("src","https://www.youtube.com/embed/" + vid.data("vidid") + "?enablejsapi=1")
   onPlayerReady();
   
 });
