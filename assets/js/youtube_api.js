@@ -1,7 +1,7 @@
 var apiKey = "AIzaSyBy-9ESszRKdMNtQIBtG6pghl7EnLtF3TE";
 var apiBase = "https://www.googleapis.com/youtube/v3/search?";
-var word = "tree";
-var targetLanguage = "french"
+var word = $("#nme");
+var targetLanguage = $("#dropdown");
 var searchKey = "how to pronounce " + word + " in " + targetLanguage;
 
 function loadClient() {
@@ -83,6 +83,10 @@ function stopVideo() {
 }
 
 $("#btn-search").on("click", async function () {
+  $("#youtube-list").innerHTML = "";
+  word = word[0].value;
+  targetLanguage = targetLanguage.text;
+  var searchKey = "how to pronounce " + word + " in " + targetLanguage;
   console.log(searchKey);
   
   await loadClient();
