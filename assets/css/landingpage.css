@@ -5,6 +5,7 @@
   --orange: #e3863c;
   --darkblue: #092232;
   font-family: "Libre Franklin", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Hero image */
@@ -105,7 +106,7 @@ p {
   color: var(--darkblue);
 }
 
-.body-card p{
+.body-card p {
   font-size: 20px;
 }
 
