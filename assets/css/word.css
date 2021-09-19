@@ -73,6 +73,10 @@ main {
   border-radius: 5px;
 }
 
+#dropdownSelected {
+  padding-top: 10px;
+}
+
 .word-class {
   width: 50%;
   margin: 2%;
