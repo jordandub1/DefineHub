@@ -26,16 +26,11 @@
   width: 10%;
 }
 
-.btn-primary a {
-  text-decoration: none;
-  color: var(--darkblue);
-}
-
-.btn-primary:hover,
-.btn-primary a:hover {
+.btn-primary:hover {
   background-color: var(--darkblue);
   color: white;
   border-color: transparent;
+  transform: scale(1.1);
 }
 
 .bg-light {
