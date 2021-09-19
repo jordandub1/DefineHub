@@ -23,7 +23,7 @@ SO THAT I can increase my daily vocabulary in a meaningful way
 # Deploy Link
 
 ```
-
+https://jordandub1.github.io/DefineHub/
 ```
 
 <br>
