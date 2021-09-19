@@ -40,6 +40,6 @@ targetLanguage.addEventListener("change", function (event) {
     })
     .catch((err) => {
       console.error(err);
-      alert(err);
+      // alert(err);
     });
 });
