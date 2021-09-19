@@ -15,18 +15,12 @@ targetLanguage.addEventListener("change", function (event) {
   //Fetching the LibreTranslate API to translate the searched word
   fetch("https://libretranslate.de/translate", {
     method: "POST",
-    headers: {
-      accept: "application/json",
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body:
-      "q=" +
-      wordToTranslate +
-      "&source=" +
-      sourceLanguage +
-      "&target=" +
-      targetLanguage1 +
-      "&format=text&api_key=xxxxxxxx-xxx-xxxx-xxxx-xxxxxxxxxxxx",
+    body: JSON.stringify({
+      q: wordToTranslate,
+      source: sourceLanguage,
+      target: targetLanguage1,
+    }),
+    headers: { "Content-Type": "application/json" },
   })
     .then((response) => {
       //   console.log(response);
