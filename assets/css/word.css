@@ -88,6 +88,19 @@ main {
   padding-top: 10px;
 }
 
+.btnSpeak {
+  border: none;
+  color: black;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btnSpeak:hover {
+  background-color: royalblue;
+}
+
 .word-class {
   width: 50%;
   margin: 2%;
@@ -135,8 +148,8 @@ textarea.question {
 
 /* Underline and Placeholder */
 
-input.question + label,
-textarea.question + label {
+input.question+label,
+textarea.question+label {
   display: block;
   position: relative;
   white-space: nowrap;
@@ -149,8 +162,8 @@ textarea.question + label {
   height: 0px;
 }
 
-input.question:focus + label,
-textarea.question:focus + label {
+input.question:focus+label,
+textarea.question:focus+label {
   width: 80%;
 }
 
@@ -164,22 +177,22 @@ textarea.question:focus {
   margin-top: 35px;
 }
 
-input.question:focus + label > span,
-input.question:valid + label > span {
+input.question:focus+label>span,
+input.question:valid+label>span {
   top: -100px;
   font-size: 22px;
   color: #333;
 }
 
-textarea.question:focus + label > span,
-textarea.question:valid + label > span {
+textarea.question:focus+label>span,
+textarea.question:valid+label>span {
   top: -150px;
   font-size: 22px;
   color: #333;
 }
 
-input.question:valid + label,
-textarea.question:valid + label {
+input.question:valid+label,
+textarea.question:valid+label {
   border-color: green;
 }
 
@@ -188,8 +201,8 @@ textarea.question:invalid {
   box-shadow: none;
 }
 
-input.question + label > span,
-textarea.question + label > span {
+input.question+label>span,
+textarea.question+label>span {
   font-weight: 300;
   margin: 0;
   position: absolute;
@@ -220,14 +233,14 @@ input[type="submit"]:active {
   background: #999;
 }
 
-input.question:valid ~ input[type="submit"],
-textarea.question:valid ~ input[type="submit"] {
+input.question:valid~input[type="submit"],
+textarea.question:valid~input[type="submit"] {
   -webkit-animation: appear 1s forwards;
   animation: appear 1s forwards;
 }
 
-input.question:invalid ~ input[type="submit"],
-textarea.question:invalid ~ input[type="submit"] {
+input.question:invalid~input[type="submit"],
+textarea.question:invalid~input[type="submit"] {
   display: none;
 }
 
