@@ -2,7 +2,9 @@ var apiKey = "AIzaSyBy-9ESszRKdMNtQIBtG6pghl7EnLtF3TE";
 var apiBase = "https://www.googleapis.com/youtube/v3/search?";
 var word = $("#nme");
 var targetLanguage = $("#dropdown");
-var searchKey = "how to pronounce " + word + " in " + targetLanguage;
+var language = $("#dropdown :selected").text();
+var searchKey = "how to pronounce " + word + " in " + language;
+
 
 function loadClient() {
     gapi.client.setApiKey("AIzaSyBy-9ESszRKdMNtQIBtG6pghl7EnLtF3TE");
@@ -82,11 +84,11 @@ function stopVideo() {
   player.stopVideo();
 }
 
-$("#btn-search").on("click", async function () {
+$("#btn-pronounce").on("click", async function () {
   $("#youtube-list").innerHTML = "";
   word = word[0].value;
-  targetLanguage = targetLanguage.text;
-  var searchKey = "how to pronounce " + word + " in " + targetLanguage;
+  var language = $("#dropdown :selected").text();
+  var searchKey = "how to pronounce " + word + " in " + language;
   console.log(searchKey);
   
   await loadClient();
