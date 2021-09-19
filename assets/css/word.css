@@ -75,7 +75,15 @@ main {
   border-radius: 10px;
 }
 
-#btn-search:hover {
+#btn-pronounce {
+  background-color: var(--orange);
+  color: #092232;
+  border-color: transparent;
+  width: auto;
+  border-radius: 10px;
+}
+
+#btn-search:hover, #btn-pronounce:hover {
   cursor: pointer;
 }
 
