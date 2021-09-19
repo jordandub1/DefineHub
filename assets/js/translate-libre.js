@@ -7,25 +7,24 @@ var targetLanguage = document.getElementById("dropdown");
 targetLanguage.addEventListener("change", function (event) {
   event.preventDefault();
   console.log(event.target.value);
-  var targetLanguage1 =
-    targetLanguage.options[targetLanguage.selectedIndex].value;
+  var targetLanguage1 = event.target.value;
+  var wordToTranslate = $("h1").text();
 
-  fetch(
-    "https://libretranslate.de/translate?q=" +
+  fetch("https://libretranslate.de/translate", {
+    method: "POST",
+    headers: {
+      accept: "application/json",
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body:
+      "q=" +
       wordToTranslate +
       "&source=" +
       sourceLanguage +
       "&target=" +
       targetLanguage1 +
       "&format=text&api_key=xxxxxxxx-xxx-xxxx-xxxx-xxxxxxxxxxxx",
-    {
-      method: "POST",
-      headers: {
-        accept: "application/json",
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    }
-  )
+  })
     .then((response) => {
       //   console.log(response);
       return response.json();
