@@ -1,9 +1,9 @@
-var wordToTranslate = "Excellence";
+var wordToTranslate = $("#word");
 var sourceLanguage = "en";
 // var targetLanguage = "fr";
 var targetLanguage = document.getElementById("dropdown");
 
-//On Dropdown change word will be translated to the choosen language
+//On Dropdown change word will be translated to the chosen language
 targetLanguage.addEventListener("change", function (event) {
   event.preventDefault();
   // Getting the selected value from dropdown list
