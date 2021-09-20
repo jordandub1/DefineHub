@@ -100,6 +100,10 @@ $("#btn-search").on("click", async function () {
 
 $("#youtube-list").on("click", "li", function (event) {
   var vid = $(event.target);
+  console.log(vid.prop("nodeName"));
+  if (vid.prop("nodeName") == "P" || vid.prop("nodeName") == "IMG") {
+    vid = vid.parent("li");
+  }
   console.log(vid.data("vidid"));
   $("#player").attr("src","https://www.youtube.com/embed/" + vid.data("vidid") + "?enablejsapi=1")
   onPlayerReady();
