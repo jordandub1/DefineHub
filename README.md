@@ -40,7 +40,7 @@ https://jordandub1.github.io/DefineHub/
 
 #### Word Definition, Translation, and YouTube Videos
 
-![Web screenshot](./assets/Images/WordandTranslate.PNG)
+![Web screenshot](./assets/images/WordandTranslate.PNG)
 
 <br>
 
@@ -55,6 +55,8 @@ https://jordandub1.github.io/DefineHub/
 - [Translate API](https://libretranslate.com/)
 
 - [YouTube API](https://developers.google.com/youtube/documentation)
+
+- [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)
 
 <br>
 
