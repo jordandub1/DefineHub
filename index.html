@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,15 +31,23 @@
     <div class="hero">
       <nav class="navbar navbar-light bg-light">
         <div class="container">
-          <button type="button" class="btn btn-primary" id="nav1">
-            <a href="https://github.com/jordandub1/DefineHub" target="_blank"
-              >GitHub</a
-            >
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="nav1"
+            onClick="window.location.href='https://github.com/jordandub1/DefineHub'"
+            value="GitHub"
+          >
+            GitHub
           </button>
-          <button type="button" class="btn btn-primary" id="nav2">
-            <a href="https://developers.google.com/youtube/v3" target="_blank"
-              >YouTube API</a
-            >
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="nav2"
+            onClick="window.location.href='https://developers.google.com/youtube/v3'"
+            value="YouTube API"
+          >
+            YouTube API
           </button>
           <!--Centered Logo-->
           <div style="text-align: center">
@@ -49,15 +59,23 @@
               height="100"
             />
           </div>
-          <button type="button" class="btn btn-primary" id="nav3">
-            <a href="https://www.wordsapi.com/docs/" target="_blank"
-              >Words API
-            </a>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="nav3"
+            onClick="window.location.href='https://www.wordsapi.com/docs/'"
+            value="Words API"
+          >
+            Words API
           </button>
-          <button type="button" class="btn btn-primary" id="nav4">
-            <a href="https://libretranslate.de/" target="_blank"
-              >Translate API</a
-            >
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="nav4"
+            onClick="window.location.href='https://libretranslate.com/'"
+            value="Translate API"
+          >
+            Translate API
           </button>
         </div>
       </nav>
@@ -82,8 +100,13 @@
           <!--start here button-->
           <div class="col">
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button type="button" class="btn btn-primary" id="start-here-btn">
-                <a href="searchpage.html">Start Here!</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="start-here-btn"
+                onClick="window.location.href='word.html'"
+              >
+                Start Here!
               </button>
             </div>
           </div>
@@ -95,7 +118,7 @@
       <!-- define section -->
       <div class="row">
         <!--Define image-->
-        <div class="col body-card">
+        <div class="col body-card" data-aos="zoom-in-right">
           <img
             src="assets/images/define.jpeg"
             id="define-image"
@@ -104,7 +127,7 @@
             height="266"
           />
         </div>
-        <div class="col body-card">
+        <div class="col body-card" data-aos="zoom-in">
           <!--Define text-->
           <h1>Define</h1>
           <p>
@@ -117,7 +140,7 @@
       </div>
       <!-- Translate section -->
       <div class="row">
-        <div class="col body-card">
+        <div class="col body-card" data-aos="zoom-out">
           <!--Translate text-->
           <h1>Translate</h1>
           <p>
@@ -127,7 +150,7 @@
             translation.
           </p>
         </div>
-        <div class="col body-card">
+        <div class="col body-card" data-aos="zoom-in-left">
           <!-- Translate image -->
           <img
             src="assets/images/translate.jpeg"
@@ -140,7 +163,7 @@
       </div>
       <!-- Pronounce section -->
       <div class="row">
-        <div class="col body-card">
+        <div class="col body-card" data-aos="zoom-in-right">
           <!-- Pronounce image -->
           <img
             src="assets/images/justicer.jpeg"
@@ -150,7 +173,7 @@
             height="266"
           />
         </div>
-        <div class="col body-card">
+        <div class="col body-card" data-aos="zoom-in">
           <!-- Pronounce text -->
           <h1>Pronounce</h1>
           <p>
@@ -162,6 +185,10 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
   <!-- Dark blue footer -->
   <footer></footer>
