@@ -40,9 +40,27 @@ https://jordandub1.github.io/DefineHub/
 
 #### Word Definition, Translation, and YouTube Videos
 
-![Web screenshot](./assets/Images/WordandTranslate.PNG)
+![Web screenshot](./assets/images/WordandTranslate.PNG)
 
 <br>
+
+## Usage Tips
+
+1. Navigate to the DefineHub using below link
+
+```
+https://jordandub1.github.io/DefineHub/
+```
+
+2. Click <b>"Start Here!"</b> button to search for the Word
+
+- If would like to learn about the API's, Translation Services, YouTube you can use Nav bar to navigate to specific documentation along with Project GitHub Repo.
+
+3. After you have typed your "Word" click on <b>Search button</b> to display Word, it's definition, and English SpeechSynthesis.
+
+4. If you would like to translate your word in to a different language use <b>Translate Dropdown</b> and select the desire language.
+
+5. If you would like to learn translated word pronunciation click on <b>Show Pronunciation</b> and YouTube videos will be available which teaches you the pronunciation.
 
 ---
 
@@ -55,6 +73,8 @@ https://jordandub1.github.io/DefineHub/
 - [Translate API](https://libretranslate.com/)
 
 - [YouTube API](https://developers.google.com/youtube/documentation)
+
+- [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)
 
 <br>
 
