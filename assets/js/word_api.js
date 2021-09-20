@@ -2,7 +2,7 @@ document.querySelector(".btnSpeak").style.display = "none";
 var strWord = $("#nme");
 var searchWord = $("#word");
 
-console.log(searchWord[0].value);
+// console.log(searchWord[0].value);
 
 function getWord(word) {
   if (!word) {
