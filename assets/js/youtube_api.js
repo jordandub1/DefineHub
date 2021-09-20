@@ -23,7 +23,7 @@ function execute(search) {
       "part": [
         "snippet"
       ],
-      "maxResults": 10,
+      "maxResults": 5,
       "q": search
     })
         .then(function(response) {
