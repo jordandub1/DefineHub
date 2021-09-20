@@ -1,6 +1,7 @@
 var apiKey = "AIzaSyBy-9ESszRKdMNtQIBtG6pghl7EnLtF3TE";
 var apiBase = "https://www.googleapis.com/youtube/v3/search?";
 
+
 async function init() {
  await gapi.load("client");
   console.log("GAPI client loaded...")
@@ -85,6 +86,7 @@ function execute(search) {
 //   player.stopVideo();
 // }
 
+
 $("#btn-search").on("click", async function () {
   var word = $("#nme");
   $("#youtube-list").empty();
@@ -92,6 +94,7 @@ $("#btn-search").on("click", async function () {
   var targetLanguage = $("#dropdown :selected").text();    
   console.log(targetLanguage);
   var searchKey = "how to pronounce " + word + " in " + targetLanguage;
+
   console.log(searchKey);
   // searchA(searchKey);
   await loadClient();

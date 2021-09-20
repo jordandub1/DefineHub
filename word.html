@@ -8,12 +8,24 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/word.css" />
-  <!-- <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
   <script src="https://apis.google.com/js/api.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
-  <!-- <script src="https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"></script> -->
-  <!-- <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" /> -->
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/book-icon.png"
+    />
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+  <title>DefineHub</title>
 </head>
 
 <body>
@@ -29,6 +41,9 @@
     </nav>
   </header>
   <main>
+    <p class='nav-text'>
+      Enter any word from the English language below:
+    </p>
     <section class="word-search">
       <form>
         <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
@@ -40,18 +55,14 @@
     <div class="row">
       <section id="word-info" class="word-class col">
         <div>
-          <h2>Translate</h2>
+          <h2>Translate </h2>
           <select id="dropdown" name="dropdown">
             <option value="en" selected="">English</option>
             <option value="ar">Arabic</option>
             <option value="zh">Chinese</option>
-            <option value="nl">Dutch</option>
-            <option value="fi">Finnish</option>
             <option value="fr">French</option>
             <option value="de">German</option>
             <option value="hi">Hindi</option>
-            <option value="hu">Hungarian</option>
-            <option value="id">Indonesian</option>
             <option value="ga">Irish</option>
             <option value="it">Italian</option>
             <option value="ja">Japanese</option>
@@ -60,16 +71,16 @@
             <option value="pt">Portuguese</option>
             <option value="ru">Russian</option>
             <option value="es">Spanish</option>
-            <option value="sv">Swedish</option>
             <option value="tr">Turkish</option>
-            <option value="uk">Ukranian</option>
             <option value="vi">Vietnamese</option>
             <!---->
           </select>
+          <button id="btn-pronounce">Show Pronunciation</button>
           <h3 id="dropdownSelected"></h3>
         </div>
         <div>
           <h1></h1>
+          <button class="btnSpeak" onclick="speak()"><i class="fas fa-volume-up"></i></button>
           <ol id="word-ul"></ol>
         </div>
       </section>
@@ -99,6 +110,8 @@
 <script src="./assets/js/youtube_api.js"></script>
 <script src = "assets/js/script.js"></script>
 <!-- <script src="./assets/js/map_api.js"></script> -->
+
+<script src="./assets/js/translate-libre.js"></script>
 
 
 </html>
