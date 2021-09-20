@@ -1,5 +1,5 @@
 var strWord = $("#nme");
-
+var wordList=$("#word-ul");
 
 function getWord(word) {
     if (!word) {
@@ -19,6 +19,8 @@ function getWord(word) {
         .then(data => {
             console.log(data);
             $("h1").text(word);
+            wordList.empty();
+
             for (i = 0; i < data.definitions.length; i++) {
                 $("#word-ul").append($("<li>").text(data.definitions[i].definition));
             };
@@ -32,6 +34,7 @@ function getWord(word) {
 
 $("#btn-search").on("click", function (e) {
     e.preventDefault();
+    
     console.log(strWord[0].value);
     getWord(strWord[0].value);
 });
