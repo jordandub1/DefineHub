@@ -1,8 +1,8 @@
 document.querySelector(".btnSpeak").style.display = "none";
 var strWord = $("#nme");
-var searchWord = $("#word");
 
-// console.log(searchWord[0].value);
+var wordList=$("#word-ul");
+
 
 function getWord(word) {
   if (!word) {
@@ -22,6 +22,7 @@ function getWord(word) {
     .then((data) => {
       console.log(data);
       $("h1").text(word);
+      wordList.empty();
       for (i = 0; i < data.definitions.length; i++) {
         $("#word-ul").append($("<li>").text(data.definitions[i].definition));
       }
@@ -30,7 +31,7 @@ function getWord(word) {
       console.error(err);
       // alert(err);
     });
-}
+} 
 
 $("#btn-search").on("click", function (e) {
   e.preventDefault();
