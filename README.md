@@ -36,11 +36,12 @@ https://jordandub1.github.io/DefineHub/
 
 #### Search Word Page
 
-![Web screenshot](./assets/images/SearchWord.PNG)
+![search](https://user-images.githubusercontent.com/75288748/134219112-f5038bc3-55a6-4461-9863-ee2a2e976dbe.png)
+
 
 #### Word Definition, Translation, and YouTube Videos
 
-![Web screenshot](./assets/images/WordandTranslate.PNG)
+![search body](https://user-images.githubusercontent.com/75288748/134219120-a3a2094f-3c79-4935-89b7-542b3fd696ad.png)
 
 <br>
 
