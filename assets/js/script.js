@@ -1,17 +1,18 @@
 var wordSearchHistory;
 
 $("#btn-search").on("click", function () {
+    var word = $("#nme")[0].value;
     if (!word) {
         return
-    } else {
-        var word = $("#nme")[0].value;
+    } else {        
         word = word.toLowerCase();
+        console.log(word);
         if (wordSearchHistory.indexOf(word) < 0) {
             wordSearchHistory.push(word);
             localStorage.setItem("WordHistory", JSON.stringify(wordSearchHistory));
         };
     };
-    // console.log(wordSearchHistory)
+    console.log(wordSearchHistory)
 });
 
 function init() {
