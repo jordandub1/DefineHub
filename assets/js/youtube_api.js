@@ -1,4 +1,4 @@
-var apiKey = "AIzaSyC-lEox_Vl5OQ9neCqwy1z-fYa92YWciYs";
+var apiKey = "AIzaSyBy-9ESszRKdMNtQIBtG6pghl7EnLtF3TE";
 var apiBase = "https://www.googleapis.com/youtube/v3/search?";
 
 
@@ -12,7 +12,7 @@ init();
 
 
 async function loadClient() {
-    gapi.client.setApiKey("AIzaSyC-lEox_Vl5OQ9neCqwy1z-fYa92YWciYs");
+    gapi.client.setApiKey("AIzaSyBy-9ESszRKdMNtQIBtG6pghl7EnLtF3TE");
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() { console.log("GAPI client loaded for API"); },
               function(err) { console.error("Error loading GAPI client for API", err); });
