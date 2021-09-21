@@ -10,6 +10,7 @@
 
 body {
   width: 100vw;
+  max-width: 100%;
   }
 
 /* Hero image */
@@ -43,7 +44,6 @@ body {
 
 /* DefineHub Hero Text */
 #explain-definehub {
-  margin-left: 5%;
   text-shadow: 2px 2px 2px black;
 }
 
@@ -81,6 +81,7 @@ body {
 }
 
 /* Main content styling */
+
 .card {
   background-color: transparent;
   color: white;
@@ -96,8 +97,14 @@ body {
   --bs-gutter-x: 6rem;
 }
 
+.row>* {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .body-card {
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .body-card h1,
@@ -115,7 +122,6 @@ p {
   transform: rotate(-5deg);
   border-radius: 10px;
   box-shadow: 3px 5px 10px #070d0d;
-  margin-left: 50px;
 }
 
 #translate-image {
@@ -128,7 +134,6 @@ p {
 #main-content {
   margin-top: 40px;
   margin-bottom: 40px;
-  max-width: 1600px;
 }
 
 /* Footer Styling */
