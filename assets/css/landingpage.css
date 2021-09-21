@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100vw;
+  }
+
 /* Hero image */
 .hero {
   background: url(../images/hero-image.jpg);
