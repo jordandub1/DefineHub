@@ -1,4 +1,4 @@
-var apiKey = "AIzaSyBy-9ESszRKdMNtQIBtG6pghl7EnLtF3TE";
+var apiKey = "AIzaSyC-lEox_Vl5OQ9neCqwy1z-fYa92YWciYs";
 var apiBase = "https://www.googleapis.com/youtube/v3/search?";
 
 
@@ -12,7 +12,7 @@ init();
 
 
 async function loadClient() {
-    gapi.client.setApiKey("AIzaSyBy-9ESszRKdMNtQIBtG6pghl7EnLtF3TE");
+    gapi.client.setApiKey("AIzaSyC-lEox_Vl5OQ9neCqwy1z-fYa92YWciYs");
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() { console.log("GAPI client loaded for API"); },
               function(err) { console.error("Error loading GAPI client for API", err); });
@@ -88,6 +88,20 @@ function execute(search) {
 
 
 $("#btn-search").on("click", async function () {
+  var word = $("#nme");
+  $("#youtube-list").empty();
+  word = word[0].value;
+  var targetLanguage = $("#dropdown :selected").text();    
+  console.log(targetLanguage);
+  var searchKey = "how to pronounce " + word + " in " + targetLanguage;
+
+  console.log(searchKey);
+  // searchA(searchKey);
+  await loadClient();
+  execute(searchKey);
+});
+
+$("select").on("click", async function () {
   var word = $("#nme");
   $("#youtube-list").empty();
   word = word[0].value;
