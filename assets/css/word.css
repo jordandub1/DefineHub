@@ -58,6 +58,11 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color:white;
+  text-decoration: none;
+}
+
 main {
   width: 100%;
 }
@@ -134,6 +139,10 @@ main {
   display: flex;
   margin-top: 50px;
   justify-content: space-between;
+}
+
+.youtube li:hover {
+  cursor: pointer;
 }
 
 .youtube p {
